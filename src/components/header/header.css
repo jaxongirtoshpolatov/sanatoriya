@@ -1,0 +1,115 @@
+
+.header__container
+{
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.nav__menu
+{
+    gap: 32px;
+}
+
+.nav__link
+{
+    color: #000;
+    position: relative;
+}
+
+.nav__link::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #ff7b00;
+    transform: translateX(-50%);
+    transition: width 0.25s linear;
+}
+
+.nav__link:hover::after{
+    width: 100%;
+}
+
+/* bars icon */
+
+.hamburger__menu {
+    background-color: #eee;
+    padding: 18px 20px;
+    visibility: hidden;
+    justify-content: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+.bars__icon
+{
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+    border-radius: 2px;
+}
+
+.bars__icon::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+    top: -10px;
+    transition: rotate 0.5s linear;
+}
+
+.bars__icon::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2.5px;
+    background-color: #000;
+    bottom: -10px;
+    transition: rotate 0.5s linear;
+}
+
+.hamburger__menu.close:hover .bars__icon{
+    transform: rotate(45deg);
+
+}
+
+.hamburger__menu.close:hover .bars__icon::after{
+    visibility: hidden;
+}
+
+.hamburger__menu.close:hover .bars__icon::before{
+    transform: translateY(-50%) rotate(90deg);
+    top: -50%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .nav__menu{
+        visibility: hidden;
+        opacity: 1;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #ddd;
+        width: 100%;
+        height: 100vh;
+        z-index: 2;
+        padding-top: 64px;
+    }
+
+    .hamburger__menu {
+        visibility: visible;
+    }
+}
