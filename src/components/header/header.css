@@ -56,7 +56,7 @@
   height: 3px;
   border-radius: 50px;
   background-color: #ff7b00;
-  transition: background-color 0.3s, top 0.3s;
+  transition: 0.5s;
 }
 
 .bars__icon span:nth-child(1) {
