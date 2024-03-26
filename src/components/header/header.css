@@ -5,6 +5,9 @@
 
 .nav__menu {
   gap: 32px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: 0.5s;
 }
 
 .nav__link {
@@ -42,8 +45,8 @@
 }
 
 .bars__icon.active {
-    z-index: 5;
-    background-color: #eee;
+  z-index: 5;
+  background-color: #eee;
 }
 
 .bars__icon span {
@@ -55,55 +58,51 @@
   transition: 0.5s;
 }
 
-.bars__icon span:nth-child(1)
-{
-    width: 25px;
-    transform: translateY(-10px);
-    left: 5px;
+.bars__icon span:nth-child(1) {
+  width: 25px;
+  transform: translateY(-10px);
+  left: 5px;
 }
 
-.bars__icon.active span:nth-child(1)
-{
-    width: 30px;
-    transform: translateY(0px) rotate(45deg);
-    left: 5px;
+.bars__icon.active span:nth-child(1) {
+  width: 30px;
+  transform: translateY(0px) rotate(45deg);
+  left: 5px;
 }
 
-.bars__icon span:nth-child(3)
-{
-    width: 20px;
-    transform: translateY(10px);
-    left: 5px;
+.bars__icon span:nth-child(3) {
+  width: 20px;
+  transform: translateY(10px);
+  left: 5px;
 }
 
-.bars__icon.active span:nth-child(3)
-{
-    width: 30px;
-    transform: translateY(0px) rotate(315deg);
-    left: 5px;
+.bars__icon.active span:nth-child(3) {
+  width: 30px;
+  transform: translateY(0px) rotate(315deg);
+  left: 5px;
 }
 
-.bars__icon.active span:nth-child(2){
-    transform: translateX(45px);
+.bars__icon.active span:nth-child(2) {
+  transform: translateX(45px);
 }
 
 .nav__menu.visible {
-    visibility: visible;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #ddd;
-    top: 0px;
-    padding-top: 84px;
+  visibility: visible;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+  top: 0px;
+  padding-top: 84px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  transition: 0.5s;
+
 }
 
-.nav__menu.nav__menu.visible .nav__item{
-    transform: translateY(0px);
-  }
-
-
-
-
+.nav__menu.nav__menu.visible .nav__item {
+  transform: translateY(0px);
+}
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -122,7 +121,7 @@
     transform: translateX(-50%);
   }
 
-  .nav__item{
+  .nav__item {
     transform: translateY(-15px);
   }
 
@@ -132,8 +131,7 @@
 }
 
 @media screen and (min-width: 900px) {
-    .nav__menu
-    {
-        transition: none;
-    }
+  .nav__menu {
+    transition: none;
+  }
 }
