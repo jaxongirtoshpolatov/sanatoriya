@@ -43,6 +43,10 @@
   visibility: hidden;
 }
 
+.bars__icon.active {
+    z-index: 5;
+}
+
 .bars__icon span {
   position: absolute;
   width: 30px;
