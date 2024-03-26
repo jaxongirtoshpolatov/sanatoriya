@@ -1,4 +1,5 @@
 import Header from '../header/header';
+import Intro from '../intro/intro';
 import './App.css';
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
         <Header/>
       </header>
       <main className="main">
-        <h1>Main</h1>
+        <section className='intro'>
+          <Intro/>
+        </section>
       </main>
       <footer className='footer'>
         <h1>Footer</h1>
