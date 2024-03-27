@@ -27,6 +27,10 @@ body {
   align-items: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .header
 {
   background-color: #D3CBC5;

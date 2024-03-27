@@ -9,6 +9,8 @@
   border-bottom-right-radius: 50%;
   transition: 0.5s;
   opacity: 1;
+  position: relative;
+  z-index: 10;
 }
 
 .nav__link {
@@ -46,7 +48,7 @@
 }
 
 .bars__icon.active {
-  z-index: 5;
+  z-index: 12;
   background-color: #eee;
 }
 
@@ -114,6 +116,7 @@
 
 @media screen and (max-width: 900px) {
   .nav__menu {
+    visibility: hidden;
     gap: 70px;
     opacity: 0;
     flex-direction: column;
