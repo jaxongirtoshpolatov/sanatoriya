@@ -12,7 +12,7 @@
 
 .tariffs__cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     margin-top: 64px;
     gap: 12px;
 }
@@ -79,4 +79,10 @@
 .tariffs__button:hover{
     background-color: #ff0efe;
     color: #fff;
+}
+
+@media screen and (max-width: 425px) {
+    .tariffs__cards {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
 }
