@@ -103,7 +103,7 @@
 
 @media screen and (max-width: 425px) {
   .slide__btns {
-    top: 100%;
+    top: 80%;
   }
 
   .arrow__icon {
