@@ -1,5 +1,6 @@
 import "./tariffs.css";
 import check from "./images/check-mark.png";
+import cross from "./images/cross.png";
 
 const Tariffs = () => {
   return (
@@ -54,7 +55,7 @@ const Tariffs = () => {
                   <p>Hamshiralar xizmati 24/7</p>
                 </li>
                 <li className="option__item d-flex">
-                  <img src={check} alt="check icon" />
+                  <img src={cross} alt="check icon" />
                   <p>Manaviy xordiq</p>
                 </li>
               </ul>
@@ -77,11 +78,11 @@ const Tariffs = () => {
                   <p>Qulay sharoitlar</p>
                 </li>
                 <li className="option__item d-flex">
-                  <img src={check} alt="check icon" />
+                  <img src={cross} alt="check icon" />
                   <p>Hamshiralar xizmati 24/7</p>
                 </li>
                 <li className="option__item d-flex">
-                  <img src={check} alt="check icon" />
+                  <img src={cross} alt="check icon" />
                   <p>Manaviy xordiq</p>
                 </li>
               </ul>
