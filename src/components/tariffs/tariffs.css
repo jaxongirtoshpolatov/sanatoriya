@@ -1,0 +1,82 @@
+.tariffs__contaianer
+{
+    padding: 64px 0;
+}
+
+.tariffs__main_title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: #f0f;
+}
+
+.tariffs__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin-top: 64px;
+    gap: 12px;
+}
+
+.tariffs__card
+{
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+    padding: 12px ;
+    border-radius: 12px;
+}
+
+.tariffs__title {
+    text-align: center;
+    font-weight: 400;
+    color: #ff0efe;
+    margin-bottom: 12px;
+}
+
+.tariffs__price
+{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.tariffs__descr {
+    font-size: 16px;
+}
+
+.tariffs__price span {
+    font-size: 48px;
+}
+
+.option__menu {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 12px;
+    margin: 12px 0;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.option__item
+{
+    gap: 12px;
+}
+
+.tariffs__button
+{
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s linear;
+    font-size: 18px;
+}
+
+.tariffs__button:hover{
+    background-color: #ff0efe;
+    color: #fff;
+}

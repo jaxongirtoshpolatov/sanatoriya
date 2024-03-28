@@ -1,5 +1,6 @@
 import Header from '../header/header';
 import Intro from '../intro/intro';
+import Tariffs from '../tariffs/tariffs';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <main className="main">
         <section className='intro'>
           <Intro slides={slides}/>
+          <Tariffs/>
         </section>
       </main>
       <footer className='footer'>
