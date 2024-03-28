@@ -4,7 +4,7 @@ import cross from "./images/cross.png";
 
 const Tariffs = () => {
   return (
-    <section className="tariffs">
+    <section className="tariffs" id="tariffs">
       <div className="container tariffs__contaianer">
         <h4 className="tariffs__main_title">Tarifflar</h4>
         <div className="tariffs__cards">

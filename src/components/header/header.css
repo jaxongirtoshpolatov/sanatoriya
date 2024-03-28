@@ -1,6 +1,6 @@
 .header__container {
   justify-content: space-between;
-  padding: 32px 0;
+  /* padding: 32px 0; */
 }
 
 .nav__menu {
@@ -111,6 +111,8 @@
 .nav__menu.nav__menu.visible .nav__link{
   color: #fff;
 }
+
+
 
 @media screen and (max-width: 1200px) {
   .container {

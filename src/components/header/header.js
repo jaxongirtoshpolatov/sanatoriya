@@ -19,13 +19,13 @@ function Header() {
 
 
   return (
-    <div className="container header__container d-flex">
+    <div className="container header__container d-flex ">
         {/* brand logo */}
         <a href="#!" className='brand__logo'>Sangardak sanatoriya</a>
         <nav className='nav d-flex'>
-            <ul className={status ? `nav__menu d-flex visible` : `nav__menu d-flex`}>
-                <li className="nav__item"><a href="#header" className="nav__link" onClick={closed}>Bosh sahifa</a></li>
-                <li className="nav__item"><a href="#!" className="nav__link" onClick={closed}>Tariff</a></li>
+            <ul className={status ? `nav__menu d-flex visible` : `nav__menu d-flex `}>
+                <li className="nav__item"><a href="#intro" className="nav__link" onClick={closed}>Bosh sahifa</a></li>
+                <li className="nav__item"><a href="#tariffs" className="nav__link" onClick={closed}>Tariff</a></li>
                 <li className="nav__item"><a href="#!" className="nav__link" onClick={closed}>Xizmatlar</a></li>
                 <li className="nav__item"><a href="#!" className="nav__link" onClick={closed}>Biz haqimizda</a></li>
                 <li className="nav__item"><a href="#!" className="nav__link" onClick={closed}>Rahbariyat</a></li>
